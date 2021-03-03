@@ -8,7 +8,7 @@
     padding: 2px;  
     margin-top: 30px;
 }
-.container p{
+.container p,li{
     margin-left: 3%;
     font-size: 20px;
     color: green;

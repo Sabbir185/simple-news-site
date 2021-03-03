@@ -2,7 +2,8 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
 const News = (props) => {
-    const {title, description, urlToImage} = props.articles;
+    const {title, description, urlToImage} = props.article;
+    
     return (
         <div className='container mb-5'>
             <Card>

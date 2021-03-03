@@ -1,27 +1,16 @@
 import './App.css';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import Header from './components/Header/Header';
+import News from './components/News/News';
+import TopHeading from './components/TopHeading/TopHeading';
 
 function App() {
   return (
     
       <div>
 
-        <Button>click on</Button>
-        
-        {/* use fluid if screen 100% width */}
-        <Container>
-            <Row>
-              <Col className='border1'>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, dolor quod eveniet eius optio dicta ut rerum magnam voluptate sequi?</p>
-              </Col>
-              <Col className='border1'>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, dolor quod eveniet eius optio dicta ut rerum magnam voluptate sequi?</p>
-              </Col>
-              <Col className='border1'>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, dolor quod eveniet eius optio dicta ut rerum magnam voluptate sequi?</p>
-              </Col>
-            </Row>
-        </Container>
+        <Header></Header>
+        <TopHeading></TopHeading>
+        <News></News>
 
       </div>
    

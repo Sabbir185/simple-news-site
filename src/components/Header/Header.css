@@ -1,0 +1,15 @@
+.logo{
+    color: tomato;
+    font-weight: 800;
+    background-image: linear-gradient(45deg, blue, cyan);
+    display: inline-block;
+    height: 60px;
+    border-radius: 30%;
+    padding: 2px;  
+    margin-top: 30px;
+}
+.container p{
+    margin-left: 3%;
+    font-size: 20px;
+    color: green;
+}

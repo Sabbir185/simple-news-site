@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <div>
+
+        <Button>click on</Button>
+        
+        {/* use fluid if screen 100% width */}
+        <Container>
+            <Row>
+              <Col className='border1'>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, dolor quod eveniet eius optio dicta ut rerum magnam voluptate sequi?</p>
+              </Col>
+              <Col className='border1'>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, dolor quod eveniet eius optio dicta ut rerum magnam voluptate sequi?</p>
+              </Col>
+              <Col className='border1'>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, dolor quod eveniet eius optio dicta ut rerum magnam voluptate sequi?</p>
+              </Col>
+            </Row>
+        </Container>
+
+      </div>
+   
   );
 }
 

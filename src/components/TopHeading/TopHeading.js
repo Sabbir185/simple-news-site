@@ -1,13 +1,16 @@
 import React from 'react';
 import { Jumbotron, Button } from 'react-bootstrap';
 
-const TopHeading = () => {
+const TopHeading = (props) => {
+    const articles = props.articles;
     return (
-        
+
         <Jumbotron className='container'>
             <h1>Breaking News!</h1>
             <p>
-                call api , show 5 title
+                {
+                    articles.map(article => <li>{article.title}</li>)
+                }
             </p>
             <p>
                 <Button variant="primary">Read More</Button>

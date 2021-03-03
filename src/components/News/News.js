@@ -1,51 +1,25 @@
 import React from 'react';
-import { Card, CardDeck } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 
-const News = () => {
+const News = (props) => {
+    const {title, description, urlToImage} = props.articles;
     return (
-        <div className='container'>
-            <CardDeck>
+        <div className='container mb-5'>
+            <Card>
+                <Card.Header>News420</Card.Header>
                 <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                    <Card.Img className='w-75 d-block m-auto pt-3 pb-2' variant="top" src={urlToImage} />
                     <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </Card.Text>
+                        <Card.Title>{title}</Card.Title>
+
+                        <Card.Text>
+                            {description}
+                        </Card.Text>
+                        <Button className='ml-4' variant="primary">Read More</Button>
                     </Card.Body>
-                    <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
                 </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This card has supporting text below as a natural lead-in to additional
-                        content.{' '}
-                    </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
-                    </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-            </CardDeck>
+                
+            </Card>
         </div>
     );
 };

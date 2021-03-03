@@ -7,7 +7,7 @@ const Header = () => {
         <div>
             <div className='container'>
                 <h1 className='logo'>News420</h1>
-                <p><em>Welcome</em></p>
+                <p style={{color:'dimgray'}}><em>Welcome</em></p>
             </div>
             <div>
                 <Navbar bg="dark" variant="dark" className='container'>

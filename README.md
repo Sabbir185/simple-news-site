@@ -8,3 +8,7 @@
 <br>
 
 # run project local server : npm start
+
+<br>
+
+[Newspaper Application.pdf](https://github.com/Sabbir185/simple-news-site/files/6076646/Newspaper.Application.pdf)
